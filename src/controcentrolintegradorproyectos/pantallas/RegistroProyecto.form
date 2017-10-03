@@ -21,7 +21,7 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Component id="jComboBox1" min="-2" pref="379" max="-2" attributes="0"/>
-              <EmptySpace pref="1260" max="32767" attributes="0"/>
+              <EmptySpace pref="1282" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -41,7 +41,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="NOMBRE DEL PROYECTO"/>
+        <Property name="text" type="java.lang.String" value="Nombre del Proyecto"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox1">

@@ -30,7 +30,7 @@ public class RegistroProyecto extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
 
-        jLabel1.setText("NOMBRE DEL PROYECTO");
+        jLabel1.setText("Nombre del Proyecto");
 
         jComboBox1.setEditable(true);
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -48,7 +48,7 @@ public class RegistroProyecto extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(26, 26, 26)
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1260, Short.MAX_VALUE))
+                .addContainerGap(1282, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
