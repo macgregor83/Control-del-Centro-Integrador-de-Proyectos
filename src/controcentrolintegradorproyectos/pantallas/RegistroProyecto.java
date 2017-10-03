@@ -141,7 +141,7 @@ public class RegistroProyecto extends javax.swing.JPanel {
         jScrollPane3.setViewportView(jTextArea2);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel11.setText("Proyecto");
+        jLabel11.setText("Datos Proyecto");
 
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
