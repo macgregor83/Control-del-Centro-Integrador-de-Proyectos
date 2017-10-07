@@ -71,6 +71,8 @@ public class registroPersona extends javax.swing.JPanel {
         jTextField16 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
 
+        setMaximumSize(new java.awt.Dimension(1165, 508));
+
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel3.setText("Apellido Materno");
