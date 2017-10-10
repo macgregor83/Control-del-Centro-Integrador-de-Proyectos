@@ -36,7 +36,7 @@ public class Login extends javax.swing.JFrame {
         //
       
         initComponents();
-         this.Disenio();
+         
          ImageIcon imagen=new ImageIcon("src\\Imagenes\\logo.PNG");
         Icon icono= new ImageIcon(imagen.getImage().getScaledInstance(etLogo.getWidth(), etLogo.getHeight(), Image.SCALE_DEFAULT));
         etLogo.setIcon(icono);
@@ -44,14 +44,7 @@ public class Login extends javax.swing.JFrame {
 
     }
 
-    public void Disenio() {
-        this.getContentPane().setBackground(Color.WHITE);
-        this.btnAceptar.setBackground(Color.WHITE);
-        this.btnCancelar.setBackground(Color.WHITE);
-         
-    }
-
-    private boolean login() {
+       private boolean login() {
         return false;
         
     }
@@ -62,11 +55,6 @@ public class Login extends javax.swing.JFrame {
                 getImage(ClassLoader.getSystemResource("Imagenes/CFE.png"));
 
         return retValue;
-    }
-
-    public void Limpiar() {
-        this.passContrasenia.setText(null);
-        this.txtUsuario.setText(null);
     }
 
     /**
@@ -85,9 +73,9 @@ public class Login extends javax.swing.JFrame {
         btnAceptar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         passContrasenia = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Control de Cursos de Capacitación");
         setBackground(new java.awt.Color(255, 255, 255));
         setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(391, 332));
@@ -97,7 +85,8 @@ public class Login extends javax.swing.JFrame {
 
         etLogo.setBackground(new java.awt.Color(255, 255, 255));
         etLogo.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        etLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/logo.PNG"))); // NOI18N
+        etLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        etLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/controcentrolintegradorproyectos/imagenes/upt.png"))); // NOI18N
         etLogo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         etUsuario.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -138,14 +127,24 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 204));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setText("*Crear nuevo usuario");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(etLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(etContrasenia)
                             .addComponent(etUsuario))
@@ -153,21 +152,17 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtUsuario)
                             .addComponent(passContrasenia)))
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btnAceptar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnCancelar)))
                 .addGap(53, 53, 53))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(etLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(etLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(etLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(etUsuario)
@@ -176,7 +171,9 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(passContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(etContrasenia))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -187,43 +184,22 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        try {
-            if (this.txtUsuario.getText() == null && this.passContrasenia.getText() ==null) {
-                JOptionPane.showMessageDialog(null, "No Ingreso Datos");
-            }
-            this.setCursor(new Cursor(Cursor.WAIT_CURSOR));
-            this.login();
-            this.dispose();
-            //this.Limpiar();
-        } catch (Exception ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(null, ex);
-        } finally {
-            this.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-        }
+       
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         // TODO add your handling code here:
-        this.Limpiar();
-        System.exit(0);
+
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void txtUsuarioKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyReleased
         // TODO add your handling code here:
-        if (txtUsuario.getText().trim().length() > 5) {
-            txtUsuario.setText(txtUsuario.getText().trim().substring(0, 5));
-        }
-        txtUsuario.setText(txtUsuario.getText().trim().toUpperCase());
-
+       
     }//GEN-LAST:event_txtUsuarioKeyReleased
 
     private void passContraseniaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passContraseniaKeyReleased
         // TODO add your handling code here:
-        if (passContrasenia.getText().trim().length() > 5) {
-            passContrasenia.setText(passContrasenia.getText().trim().substring(0, 5));
-        }
-        passContrasenia.setText(passContrasenia.getText().trim().toUpperCase());
+       
     }//GEN-LAST:event_passContraseniaKeyReleased
 
     /**
@@ -273,6 +249,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel etContrasenia;
     private javax.swing.JLabel etLogo;
     private javax.swing.JLabel etUsuario;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField passContrasenia;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables

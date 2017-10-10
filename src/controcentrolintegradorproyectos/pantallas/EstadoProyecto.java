@@ -201,14 +201,14 @@ public class EstadoProyecto extends javax.swing.JPanel {
 
         jTable8.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+                {null},
+                {null},
+                {null},
+                {null},
+                {null}
             },
             new String [] {
-                "Objetivos Específicos", "Porcentaje"
+                "Objetivos Específicos"
             }
         ));
         jScrollPane12.setViewportView(jTable8);
