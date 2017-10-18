@@ -17,6 +17,7 @@ public class RegistroPersona extends javax.swing.JPanel {
      * Creates new form registroPersona
      */
     public RegistroPersona() {
+        
         initComponents();
     }
 
