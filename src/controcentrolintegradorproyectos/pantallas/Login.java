@@ -52,7 +52,7 @@ public class Login extends javax.swing.JFrame {
     @Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().
-                getImage(ClassLoader.getSystemResource("Imagenes/CFE.png"));
+                getImage(ClassLoader.getSystemResource("src\\controcentrolintegradorproyectos\\Imagenes\\logo.png"));
 
         return retValue;
     }
