@@ -65,11 +65,11 @@ public class Login extends javax.swing.JFrame {
 
         etLogo = new javax.swing.JLabel();
         etUsuario = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
+        jTextFieldUsuario = new javax.swing.JTextField();
         etContrasenia = new javax.swing.JLabel();
-        btnAceptar = new javax.swing.JButton();
-        btnCancelar = new javax.swing.JButton();
-        passContrasenia = new javax.swing.JPasswordField();
+        jButtonAceptar = new javax.swing.JButton();
+        jButtonCancelar = new javax.swing.JButton();
+        jTextFieldContrasenia = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -89,38 +89,38 @@ public class Login extends javax.swing.JFrame {
         etUsuario.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
         etUsuario.setText("Usuario");
 
-        txtUsuario.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
-        txtUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFieldUsuario.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
+        jTextFieldUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtUsuarioKeyReleased(evt);
+                jTextFieldUsuarioKeyReleased(evt);
             }
         });
 
         etContrasenia.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
         etContrasenia.setText("Contraseña");
 
-        btnAceptar.setBackground(new java.awt.Color(255, 255, 255));
-        btnAceptar.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
-        btnAceptar.setText("Aceptar");
-        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
+        jButtonAceptar.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonAceptar.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
+        jButtonAceptar.setText("Aceptar");
+        jButtonAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAceptarActionPerformed(evt);
+                jButtonAceptarActionPerformed(evt);
             }
         });
 
-        btnCancelar.setBackground(new java.awt.Color(255, 255, 255));
-        btnCancelar.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
-        btnCancelar.setText("Cancelar");
-        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+        jButtonCancelar.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonCancelar.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
+        jButtonCancelar.setText("Cancelar");
+        jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelarActionPerformed(evt);
+                jButtonCancelarActionPerformed(evt);
             }
         });
 
-        passContrasenia.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
-        passContrasenia.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFieldContrasenia.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
+        jTextFieldContrasenia.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                passContraseniaKeyReleased(evt);
+                jTextFieldContraseniaKeyReleased(evt);
             }
         });
 
@@ -147,12 +147,12 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(etUsuario))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtUsuario)
-                            .addComponent(passContrasenia)))
+                            .addComponent(jTextFieldUsuario)
+                            .addComponent(jTextFieldContrasenia)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnAceptar)
+                        .addComponent(jButtonAceptar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCancelar)))
+                        .addComponent(jButtonCancelar)))
                 .addGap(53, 53, 53))
         );
         layout.setVerticalGroup(
@@ -163,41 +163,41 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(etUsuario)
-                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(passContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(etContrasenia))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
+    private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
 
-    }//GEN-LAST:event_btnAceptarActionPerformed
+    }//GEN-LAST:event_jButtonAceptarActionPerformed
 
-    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+    private void jButtonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelarActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_btnCancelarActionPerformed
+    }//GEN-LAST:event_jButtonCancelarActionPerformed
 
-    private void txtUsuarioKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyReleased
+    private void jTextFieldUsuarioKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioKeyReleased
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_txtUsuarioKeyReleased
+    }//GEN-LAST:event_jTextFieldUsuarioKeyReleased
 
-    private void passContraseniaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passContraseniaKeyReleased
+    private void jTextFieldContraseniaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldContraseniaKeyReleased
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_passContraseniaKeyReleased
+    }//GEN-LAST:event_jTextFieldContraseniaKeyReleased
 
     /**
      * @param args the command line arguments
@@ -241,14 +241,14 @@ public class Login extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAceptar;
-    private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel etContrasenia;
     private javax.swing.JLabel etLogo;
     private javax.swing.JLabel etUsuario;
+    private javax.swing.JButton jButtonAceptar;
+    private javax.swing.JButton jButtonCancelar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField passContrasenia;
-    private javax.swing.JTextField txtUsuario;
+    private javax.swing.JPasswordField jTextFieldContrasenia;
+    private javax.swing.JTextField jTextFieldUsuario;
     // End of variables declaration//GEN-END:variables
 
 }
